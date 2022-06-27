@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-6nf#qkz^twy(d^p8yp)fk18jd0%2vzpvs+z4gn_^-wrrp3^3v^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['test-deportivo.herokuapp.com']
-
+#ALLOWED_HOSTS = ['test-deportivo.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -130,14 +130,14 @@ MIDDLEWARE_CLASSES = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-   'deporte/static',
+   os.path.join(BASE_DIR, 'deporte/static'),
 )
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'deporte/staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
