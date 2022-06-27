@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Aplicaciones.Entrenador.views import Robar, entrenador,anadir,registrarDeportista,listar,Puntos,edicion_Puntos,editar_Puntos,puntos_dos,edicion_tiros2,editar_Tiros_Dos,puntos_tres,edicion_tiros3,editar_Tiros_Tres,home,Salto_vertical,edicion_Salto,editar_Salto,Robar,edicion_Robos
+from deporte.views import Robar, entrenador,anadir,registrarDeportista,listar,Puntos,edicion_Puntos,editar_Puntos,puntos_dos,edicion_tiros2,editar_Tiros_Dos,puntos_tres,edicion_tiros3,editar_Tiros_Tres,home,Salto_vertical,edicion_Salto,editar_Salto,Robar,edicion_Robos
 
 
 urlpatterns = [
