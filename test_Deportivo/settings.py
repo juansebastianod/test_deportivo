@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'test_Deportivo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Test_Deportivo1.5',
-        'USER': 'postgres',
-        'PASSWORD':'0326011624302015mfMF',
-        'HOST': '127.0.0.1',
+        'NAME': 'd93k17l7fj59co',
+        'USER': 'lhuddpwkccehav',
+        'PASSWORD':'471aa7c7cc452e7348b9afb8edd4caafc44dfc7651ae0a0940258c523b046a8a',
+        'HOST': 'ec2-23-23-151-191.compute-1.amazonaws.com',
         'DATABASE_PORT':'5432'
     }
 }
