@@ -60,7 +60,7 @@ CORS_ALLOW_CREDENTIALS = False
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/OVALLOS/Desktop/web/PracticaDjango/test_Deportivo/deporte/plantillas'],
+        'DIRS': [os.path.join(BASE_DIR, 'deporte/plantillas')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
