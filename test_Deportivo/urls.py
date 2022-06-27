@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 from deporte.views import Robar, entrenador,anadir,registrarDeportista,listar,Puntos,edicion_Puntos,editar_Puntos,puntos_dos,edicion_tiros2,editar_Tiros_Dos,puntos_tres,edicion_tiros3,editar_Tiros_Tres,home,Salto_vertical,edicion_Salto,editar_Salto,Robar,edicion_Robos
 
 
@@ -43,20 +45,4 @@ urlpatterns = [
     path('editarRobos/',edicion_Robos),
     
 
-   
-
-    
-
-
-    
-
-
-    
-
-
-
-   
-    
-
-
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

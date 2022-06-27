@@ -131,12 +131,14 @@ MIDDLEWARE_CLASSES = (
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
    os.path.join(BASE_DIR, 'deporte/static'),
 )
+
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'deporte/staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
