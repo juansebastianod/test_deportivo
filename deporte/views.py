@@ -6,6 +6,13 @@ from .models import Deportista, Salto, Test_Puntos, Test_Tiros_De_Dos, Test_Tiro
 # Create your views here.
 
 def entrenador(request):
+
+    codigo=int(request.POST['txtCodigo'])
+    if codigo==12345:
+         return render(request,'entrenador.html')
+    else :
+         return render(request,'index.html')        
+    
     return render(request,'entrenador.html')
 
 def home(request):
@@ -184,12 +191,12 @@ def editar_Salto(request):
 
     resultados.save()
     
-    return render(request,'registro.html')
+    return render(request,'registro4.html')
 
 def Robar(request):
 
-    punto=  Robos.objects.all()
-    return render(request,'robos.html',{"Robos":punto})
+   
+    return render(request,'index.html')
 
 def edicion_Robos(request,id):
      robo=Robos.objects.get(id=id)
