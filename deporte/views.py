@@ -1,19 +1,22 @@
 from copy import deepcopy
 import re
 from django.shortcuts import render,redirect
-from .models import Deportista, Salto, Test_Puntos, Test_Tiros_De_Dos, Test_Tiros_De_Tres,Robos
+from .models import Deportista, Entrenador, Salto, Test_Puntos, Test_Tiros_De_Dos, Test_Tiros_De_Tres,Robos
 
 # Create your views here.
 
 def entrenador(request):
-
-    codigo=int(request.POST['txtCodigo'])
-    if codigo==12345:
+    codigoEntrenador=int(request.POST['txtCodigo'])
+  
+    
+    
+  
+    if  codigoEntrenador==12345:
          return render(request,'entrenador.html')
     else :
          return render(request,'index.html')        
     
-    return render(request,'entrenador.html')
+   
 
 def home(request):
     return render(request,'index.html')
@@ -25,6 +28,7 @@ def anadir(request):
 def listar(request):
 
      deportista=Deportista.objects.all()
+     
      return render(request,'listado.html',{"deportista":deportista})
 
 def registrarDeportista(request):
