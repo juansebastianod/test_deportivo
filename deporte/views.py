@@ -54,12 +54,6 @@ def registrarDeportista(request):
             
             break
 
-   
-
-
-
-         
-
     return render(request,'entrenador.html')
 
 def Puntos(request):
@@ -94,7 +88,7 @@ def editar_Puntos(request):
 
     resultados.save()
     
-    return render(request,'Puntos.html')
+    return render(request,'registro.html')
 
 def puntos_dos(request):
 
@@ -129,7 +123,7 @@ def editar_Tiros_Dos(request):
 
     resultados.save()
     
-    return render(request,'tirosDos.html')
+    return render(request,'registro.html')
 
 
 def puntos_tres(request):
@@ -163,7 +157,7 @@ def editar_Tiros_Tres(request):
 
     resultados.save()
     
-    return render(request,'tirosTres.html')
+    return render(request,'registro.html')
 
 def Salto_vertical(request):
     salto=Salto.objects.all()
@@ -190,7 +184,7 @@ def editar_Salto(request):
 
     resultados.save()
     
-    return render(request,'saltos.html')
+    return render(request,'registro.html')
 
 def Robar(request):
 
@@ -225,4 +219,4 @@ def editar_Robos(request):
 
     resultados.save()
     
-    return render(request,'robos.html')
+    return render(request,'registro.html')

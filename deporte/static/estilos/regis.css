@@ -1,0 +1,28 @@
+body {
+	background-color: #eceef4
+}
+
+img {
+	display: block;
+	margin: 0px auto;
+}
+
+.container {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.text {
+	font-size: 25px;
+}
+
+.boton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
