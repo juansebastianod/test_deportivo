@@ -123,7 +123,7 @@ def editar_Tiros_Dos(request):
 
     resultados.save()
     
-    return render(request,'registro.html')
+    return render(request,'registro2.html')
 
 
 def puntos_tres(request):
@@ -157,7 +157,7 @@ def editar_Tiros_Tres(request):
 
     resultados.save()
     
-    return render(request,'registro.html')
+    return render(request,'registro3.html')
 
 def Salto_vertical(request):
     salto=Salto.objects.all()
